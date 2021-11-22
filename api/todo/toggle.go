@@ -8,13 +8,12 @@ type ToggleRequest struct {
 	ID  string
 	Val bool
 }
-type ToggleResponse struct{}
 
-func (t *Todo) Toggle(ctx context.Context, req *ToggleRequest) (*ToggleResponse, error) {
+func (t *Todo) Toggle(ctx context.Context, req *ToggleRequest) error {
 	i := &TodoItem{}
 	if err := t.kv.Get(req.ID, i); err != nil {
-		return nil, err
+		return err
 	}
 	i.Completed = req.Val
-	return nil, t.kv.Put(i.ID, i)
+	return t.kv.Put(i.ID, i)
 }

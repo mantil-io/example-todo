@@ -4,12 +4,11 @@ import (
 	"context"
 )
 
-type GetRequest struct{}
 type GetResponse struct {
 	Todos []TodoItem
 }
 
-func (t *Todo) Get(ctx context.Context, req *GetRequest) (*GetResponse, error) {
+func (t *Todo) Get(ctx context.Context) (*GetResponse, error) {
 	var items []TodoItem
 	_, err := t.kv.FindAll(&items)
 	if err != nil {
