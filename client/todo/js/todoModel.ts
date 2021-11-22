@@ -24,7 +24,7 @@ class TodoModel implements ITodoModel {
   }
 
   private async apiCall(method: string, body?: any) {
-    const url = `/main/todo/${method}`;
+    const url = `/todo/${method}`;
     const opts: any = {
       method: 'POST',
     }
