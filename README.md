@@ -77,7 +77,7 @@ kv.Put(t.kvKey(), t)
 Now we can query all completed todos by calling:
 ```
 var items []TodoItem
-_, err := kv.Find(&items, mantil.FindBeginsWith, "complted:true")
+_, err := kv.Find(&items, mantil.FindBeginsWith, "completed:true")
 ```
 
 ## Cleanup
