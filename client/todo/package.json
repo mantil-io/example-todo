@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "./node_modules/typescript/bin/tsc -p ./js/ --outDir ./lib && node ./node_modules/browserify/bin/cmd ./lib/app.js -o ./public/js/bundle.js && rm -rf ../../public && cp -r ./public ../../public",
+    "start": "node ./serve.js"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "todomvc-app-css": "^2.0.0",
+    "todomvc-common": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.3.1",
+    "@types/react": "^16.7.0",
+    "@types/react-dom": "^16.0.11",
+    "browserify": "^16.2.3",
+    "node-static": "^0.7.11",
+    "typescript": "^4.5.2"
+  }
+}
