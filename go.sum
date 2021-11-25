@@ -4,9 +4,10 @@ github.com/aws/aws-lambda-go v1.27.0 h1:aLzrJwdyHoF1A18YeVdJjX8Ixkd+bpogdxVInvHc
 github.com/aws/aws-lambda-go v1.27.0/go.mod h1:jJmlefzPfGnckuHdXX7/80O3BvUUi12XOkbv4w9SGLU=
 github.com/aws/aws-sdk-go-v2 v1.7.0/go.mod h1:tb9wi5s61kTDA5qCkcDbt3KRVV74GGslQkl/DRdX/P4=
 github.com/aws/aws-sdk-go-v2 v1.8.1/go.mod h1:xEFuWz+3TYdlPRuo+CqATbeDWIWyaT5uAPwPaWtgse0=
-github.com/aws/aws-sdk-go-v2 v1.9.0/go.mod h1:cK/D0BBs0b/oWPIcX/Z/obahJK1TT7IPVjy53i/mX/4=
 github.com/aws/aws-sdk-go-v2 v1.11.1 h1:GzvOVAdTbWxhEMRK4FfiblkGverOkAT0UodDxC1jHQM=
 github.com/aws/aws-sdk-go-v2 v1.11.1/go.mod h1:SQfA+m2ltnu1cA0soUkj4dRSsmITiVQUJvBIZjzfPyQ=
+github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.0.0 h1:yVUAwvJC/0WNPbyl0nA3j1L6CW1CN8wBubCRqtG7JLI=
+github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.0.0/go.mod h1:Xn6sxgRuIDflLRJFj5Ev7UxABIkNbccFPV/p8itDReM=
 github.com/aws/aws-sdk-go-v2/config v1.4.1/go.mod h1:HCDWZ/oeY59TPtXslxlbkCqLQBsVu6b09kiG43tdP+I=
 github.com/aws/aws-sdk-go-v2/config v1.10.2 h1:lrNnqRpPDgrozyKMnt5/Bhcv01kel7JO6KFx4VdroCY=
 github.com/aws/aws-sdk-go-v2/config v1.10.2/go.mod h1:OY1jfuHozx6GDg+NITKNukVQi4fLlnenu1PAbDJg5fk=
@@ -42,9 +43,13 @@ github.com/aws/aws-sdk-go-v2/service/internal/endpoint-discovery v1.3.1/go.mod h
 github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.2.0/go.mod h1:a7XLWNKuVgOxjssEF019IiHPv35k8KHBaWv/wJAfi2A=
 github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.5.1 h1:ZFSfgetO5kf4WXy+a2B8zug6DXGUYjsWacyvwx5cgXU=
 github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.5.1/go.mod h1:fEaHB2bi+wVZw4uKMHEXTL9LwtT4EL//DOhTeflqIVo=
+github.com/aws/aws-sdk-go-v2/service/internal/s3shared v1.9.1 h1:ACJBfyfa2TxVBzwiKOdzLVdRymu6XKDXLLkfAC6rNBM=
+github.com/aws/aws-sdk-go-v2/service/internal/s3shared v1.9.1/go.mod h1:wnxXx7N+DjBf8mDy1qAzoSqWmpOOzCHW6hRqIUxPQEw=
 github.com/aws/aws-sdk-go-v2/service/lambda v1.4.0/go.mod h1:yKVqZqXjhuSGQwrz3GvHtLTqgeHIbMkKgwSVeVRL+2k=
 github.com/aws/aws-sdk-go-v2/service/lambda v1.13.0 h1:e3AVIgBAMQgXZwg1tc/UrQd2OOim2qchmTWMX1e0TPg=
 github.com/aws/aws-sdk-go-v2/service/lambda v1.13.0/go.mod h1:wfhCVyi2N/rimFzjfLY7VJzMauMNNhza+jM3B7mhWpE=
+github.com/aws/aws-sdk-go-v2/service/s3 v1.19.1 h1:v7n7a2v9fN+We4Jna/u7+35Fhch5YDgtxjglRBNjYh4=
+github.com/aws/aws-sdk-go-v2/service/s3 v1.19.1/go.mod h1:wcAYHjbvrLxDNWJmwCgwxudlHIkSLyU2m4Q1tWO6QZw=
 github.com/aws/aws-sdk-go-v2/service/sso v1.3.0/go.mod h1:qWR+TUuvfji9udM79e4CPe87C5+SjMEb2TFXkZaI0Vc=
 github.com/aws/aws-sdk-go-v2/service/sso v1.6.1 h1:NF/qN6e8hdHO/Pt5jN+S65dxFom3b8+ciVdyv8Jr00U=
 github.com/aws/aws-sdk-go-v2/service/sso v1.6.1/go.mod h1:/73aFBwUl60wKBKhdth2pEOkut5ZNjVHGF9hjXz0bM0=
@@ -53,7 +58,6 @@ github.com/aws/aws-sdk-go-v2/service/sts v1.10.1 h1:2DKYFOmC7d3WOzdBTFJxfkcMXVVI
 github.com/aws/aws-sdk-go-v2/service/sts v1.10.1/go.mod h1:+BmlPeQ1Y+PuIho93MMKDby12PoUnt1SZXQdEHCzSlw=
 github.com/aws/smithy-go v1.5.0/go.mod h1:SObp3lf9smib00L/v3U2eAKG8FyQ7iLrJnQiAmR5n+E=
 github.com/aws/smithy-go v1.7.0/go.mod h1:SObp3lf9smib00L/v3U2eAKG8FyQ7iLrJnQiAmR5n+E=
-github.com/aws/smithy-go v1.8.0/go.mod h1:SObp3lf9smib00L/v3U2eAKG8FyQ7iLrJnQiAmR5n+E=
 github.com/aws/smithy-go v1.9.0 h1:c7FUdEqrQA1/UVKKCNDFQPNKGp4FQg3YW4Ck5SLTG58=
 github.com/aws/smithy-go v1.9.0/go.mod h1:SObp3lf9smib00L/v3U2eAKG8FyQ7iLrJnQiAmR5n+E=
 github.com/cpuguy83/go-md2man/v2 v2.0.0-20190314233015-f79a8a8ca69d/go.mod h1:maD7wRr/U5Z6m/iR4s+kqSMx2CaBsrgA7czyZG/E6dU=
@@ -88,8 +92,8 @@ github.com/klauspost/compress v1.11.12/go.mod h1:aoV0uJVorq1K+umq18yTdKaF57EivdY
 github.com/klauspost/compress v1.12.1/go.mod h1:8dP1Hq4DHOhN9w426knH3Rhby4rFm6D8eO+e+Dq5Gzg=
 github.com/klauspost/compress v1.13.4 h1:0zhec2I8zGnjWcKyLl6i3gPqKANCCn5e9xmviEEeX6s=
 github.com/klauspost/compress v1.13.4/go.mod h1:8dP1Hq4DHOhN9w426knH3Rhby4rFm6D8eO+e+Dq5Gzg=
-github.com/mantil-io/mantil.go v0.1.2 h1:8eajADC/OvQyf/cOLnWpzeED6X0WzRYnSji015fjwuE=
-github.com/mantil-io/mantil.go v0.1.2/go.mod h1:2UUHFWUJKzjUWGW85hqQbQ3jxjijtZShl9ixoGbmOBI=
+github.com/mantil-io/mantil.go v0.1.3-0.20211125124945-bd8269e44ff7 h1:w0mBTBqcqyA4KhfmaR+KmlBUU7lDvMDeEafqNub7bn8=
+github.com/mantil-io/mantil.go v0.1.3-0.20211125124945-bd8269e44ff7/go.mod h1:cRTxZIbJ86YO4lrWrjGzUziVv7Mmi/khpFtckWz1498=
 github.com/minio/highwayhash v1.0.1 h1:dZ6IIu8Z14VlC0VpfKofAhCy74wu/Qb5gcn52yWoz/0=
 github.com/minio/highwayhash v1.0.1/go.mod h1:BQskDq+xkJ12lmlUUi7U0M5Swg3EWR+dLTk+kldvVxY=
 github.com/nats-io/jwt v1.2.2 h1:w3GMTO969dFg+UOKTmmyuu7IGdusK+7Ytlt//OYH/uU=
