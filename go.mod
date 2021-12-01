@@ -10,7 +10,7 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.3.0
 	github.com/klauspost/compress v1.13.4 // indirect
-	github.com/mantil-io/mantil.go v0.1.3-0.20211125124945-bd8269e44ff7
+	github.com/mantil-io/mantil.go v0.1.5
 	github.com/nats-io/nats-server/v2 v2.3.3-0.20210719165541-e8fea67b1a38 // indirect
 	github.com/nats-io/nats.go v1.13.0 // indirect
 	golang.org/x/crypto v0.0.0-20211117183948-ae814b36b871 // indirect
