@@ -333,7 +333,7 @@ var TodoModel = (function () {
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
-                        url = "/main/todo/".concat(method);
+                        url = "/todo/".concat(method);
                         opts = {
                             method: 'POST',
                         };
