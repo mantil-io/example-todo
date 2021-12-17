@@ -74,11 +74,11 @@ Note: If this is the first time you are using Mantil you will firstly need to in
 ```
 mantil aws install
 ```
-Then you can proceed with the creation of the first stage.
+Then you can proceed with application deployment.
 ```
-mantil stage new development
+mantil deploy
 ```
-This command will create a new stage called `development` and deploy it to your node. 
+This command will create a new stage for your project and deploy it to your node.
 
 Now you can output the stage endpoint with `mantil env -u`. This is where the website for this project will be availabe. The API endpoints can be invoked by specifying the function and method name in the path, for example `$(mantil env -u)/todo/get`.
 
