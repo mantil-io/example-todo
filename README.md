@@ -11,10 +11,7 @@ brew install mantil
 ```
 or check [direct download links](https://github.com/mantil-io/mantil#installation).
 
-To deploy this application you will need:
-- An [AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
-- A GitHub account with a repository where you have admin rights
-- A Slack account with the right to create apps
+To deploy this application you will need an [AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/).
 
 ## Installation
 
@@ -90,7 +87,7 @@ mantil deploy
 
 This command will create a new stage for your project with default name `development` and deploy it to your node.)
 
-Now you can output the stage endpoint with `mantil env -u`. The API endpoint for your function will have the name of that function in the path, in our case that is `$(mantil env -u)/handler`.
+Now you can output the stage endpoint with `mantil env -u`. The API endpoint for your function will have the name of that function in the path, for example `$(mantil env -u)/get`.
 
 With this URL we can now create a Github webhook which will invoke our Lambda function on each star to our Github repository.
 
