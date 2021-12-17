@@ -87,10 +87,7 @@ mantil deploy
 
 This command will create a new stage for your project with default name `development` and deploy it to your node.)
 
-Now you can output the stage endpoint with `mantil env -u`. The API endpoint for your function will have the name of that function in the path, for example `$(mantil env -u)/get`.
-
-With this URL we can now create a Github webhook which will invoke our Lambda function on each star to our Github repository.
-
+Now you can output the stage endpoint with `mantil env -u`. This is where the website for this project will be availabe. The API endpoints can be invoked by specifying the function and method name in the path, for example `$(mantil env -u)/todo/get`.
 
 ## Modification
 
