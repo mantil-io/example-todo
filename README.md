@@ -1,14 +1,14 @@
 ## Todo app 
 
-This template shows how one can make a simple cloud native todo app with a serverless backend written in Go. Backend is built on AWS Lambda and uses DynamoDB as persistent storage. The client part is created using [TypeScript & React TodoMVC Example](https://github.com/tastejs/todomvc/tree/master/examples/typescript-react).
+This example shows how one can make a simple cloud native todo app with a serverless backend written in Go. Backend is built on AWS Lambda and uses DynamoDB as persistent storage. The client part is created using [TypeScript & React TodoMVC Example](https://github.com/tastejs/todomvc/tree/master/examples/typescript-react).
 
-This example will teach you:
+Through this example you will learn:
 - How to include DynamoDB table to your Mantil project using persistent key/value storage in Mantil APIs and how to perform CRUD operations 
 - How to deploy a web application on top of AWS Lambda with Mantil
 
 ## Prerequisites
 
-This template is created with Mantil. To download [Mantil CLI](https://github.com/mantil-io/mantil#installation) on Mac or Linux use Homebrew 
+This example is created with Mantil. To download [Mantil CLI](https://github.com/mantil-io/mantil#installation) on Mac or Linux use Homebrew 
 ```
 brew tap mantil-io/mantil
 brew install mantil
@@ -19,7 +19,7 @@ To deploy this application you will need an [AWS account](https://aws.amazon.com
 
 ## Installation
 
-To locally create a new project from this template run:
+To locally create a new project from this example run:
 ```
 mantil new app --from todo
 cd app
@@ -74,11 +74,11 @@ _, err := kv.Find(&items, mantil.FindBeginsWith, "completed:true")
 
 ## Deploying the application
 
-Note: If this is the first time you are using Mantil you will firstly need to install Mantil Node on your AWS account. For detailed instructions please follow the [one-step setup](https://github.com/mantil-io/mantil/blob/master/docs/getting_started.md#setup)
+Note: If this is the first time you are using Mantil you will need to install Mantil Node on your AWS account. For detailed instructions please follow the [one-step setup](https://github.com/mantil-io/mantil/blob/master/docs/getting_started.md#setup)
 ```
 mantil aws install
 ```
-Then you can proceed with application deployment.
+Then you can proceed with application deployment
 ```
 mantil deploy
 ```
@@ -113,6 +113,6 @@ mantil stage destroy development
 
 ## Final thoughts
 
-With this template you learned how to create a serverless todo application with AWS Lambda and Mantil's KV store backed by DynamoDB. Check out [our documentation](https://github.com/mantil-io/mantil#documentation) to find more interesting templates.
+With this example you learned how to create a serverless todo application with AWS Lambda and Mantil's KV store backed by DynamoDB. Check out [our documentation](https://github.com/mantil-io/mantil#documentation) to find more interesting templates.
 
 If you have any questions or comments on this template or would just like to share your view on Mantil contact us at [support@mantil.com](mailto:support@mantil.com).
