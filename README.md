@@ -1,6 +1,10 @@
 ## About
 
-This is a simple Todo application which will demonstrate how to use persistent key/value storage in Mantil APIs.
+This template shows how one can make a simple todo-app that is always available online. Backend is built with AWS Lambda and uses DynamoDB as a storage. Client part is created using [TypeScript & React TodoMVC Example](https://github.com/tastejs/todomvc/tree/master/examples/typescript-react).
+
+This example will teach you:
+- How to include (and work with) DynamoDB table to your Mantil project using persistent key/value storage in Mantil APIs
+- How to deploy web application on top of AWS Lambda with Mantil
 
 ## Prerequisites
 
@@ -23,7 +27,7 @@ cd app
 
 ## Using the K/V store
 
-In this example we are using a Mantil KV store to persistently store and query todos.
+In this example we are using a Mantil KV store to persistently store and query todos. Mantil KV is a key-value store backed DynamoDB. When used it becomes part of the Mantil project. DynamoDB table is created on demand, uses the same naming convention as all other Mantil project resources and it is removed when Mantil project stage is destroyed.
 
 First we [initialize](api/todo/todo.go#L18) the store:
 ```
@@ -70,7 +74,7 @@ _, err := kv.Find(&items, mantil.FindBeginsWith, "completed:true")
 
 ## Deploying the application
 
-Note: If this is the first time you are using Mantil you will firstly need to install Mantil Node on your AWS account. For detailed instructions please follow these simple, one-step setup [instructions](https://github.com/mantil-io/mantil/blob/master/docs/getting_started.md#setup)
+Note: If this is the first time you are using Mantil you will firstly need to install Mantil Node on your AWS account. For detailed instructions please follow the [one-step setup](https://github.com/mantil-io/mantil/blob/master/docs/getting_started.md#setup)
 ```
 mantil aws install
 ```
@@ -78,13 +82,13 @@ Then you can proceed with application deployment.
 ```
 mantil deploy
 ```
-This command will create a new stage for your project and deploy it to your node.
+This command will create a new stage for your project with the default name `development` and deploy it to your node.
 
-Now you can output the stage endpoint with `mantil env -u`. This is where the website for this project will be availabe. The API endpoints can be invoked by specifying the function and method name in the path, for example `$(mantil env -u)/todo/get`.
+Now you can output the stage endpoint with `mantil env -u`. This is where the website for this project will be available. The API endpoints can be invoked by specifying the function and method name in the path, for example `$(mantil env -u)/todo/get`.
 
 ## Modification
 
-If you want different behavior out of your function you can make necessary changes to your code the `api` folder.
+If you want different behavior out of your function you can make necessary changes to your code in the `api` folder.
 
 The client code is located in `client/todo`, to build it run:
 
@@ -96,19 +100,19 @@ npm run build
 
 This will build the static assets and copy them over to the Mantil public folder. Note that this is optional and only needed if you want to modify the client code. The project already contains prebuilt assets in `public` so you can start by deploying a new stage immediately.
 
-After each change you have to deploy your changes with `mantil deploy`, or instruct Mantil to  automatically deploy all saved changes with `mantil watch`.
+After each change you have to deploy your changes with `mantil deploy`, or instruct Mantil to automatically deploy all saved changes with `mantil watch`.
 
 For more detailed instruction please refer to the [Mantil documentation](https://github.com/mantil-io/mantil#documentation).
 
 ## Cleanup
 
-To remove the created stage from your AWS account destroy it with:
+To remove the created stage with all resources including created DynamoDB table from your AWS account destroy it with:
 ```
 mantil stage destroy development
 ```
 
 ## Final thoughts
 
-With this template you learned how to create a simple serverless todo application with AWS Lambda and Mantil's KV store backed by DynamoDB. Check out [our documentation](https://github.com/mantil-io/mantil#documentation) to find more interesting templates.
+With this template you learned how to create a serverless todo application with AWS Lambda and Mantil's KV store backed by DynamoDB. Check out [our documentation](https://github.com/mantil-io/mantil#documentation) to find more interesting templates.
 
-If you have any questions or comments on this concrete template or would just like to share your view on Mantil contact us at [support@mantil.com](mailto:support@mantil.com) or create an issue.
+If you have any questions or comments on this template or would just like to share your view on Mantil contact us at [support@mantil.com](mailto:support@mantil.com).
