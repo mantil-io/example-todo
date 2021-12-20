@@ -1,6 +1,6 @@
-## About
+## Todo app 
 
-This template shows how one can make a simple cloud-based todo app with a serverless backend written in Go. Backend is built on AWS Lambda and uses DynamoDB as persistent storage. The client part is created using [TypeScript & React TodoMVC Example](https://github.com/tastejs/todomvc/tree/master/examples/typescript-react).
+This template shows how one can make a simple cloud native todo app with a serverless backend written in Go. Backend is built on AWS Lambda and uses DynamoDB as persistent storage. The client part is created using [TypeScript & React TodoMVC Example](https://github.com/tastejs/todomvc/tree/master/examples/typescript-react).
 
 This example will teach you:
 - How to include DynamoDB table to your Mantil project using persistent key/value storage in Mantil APIs and how to perform CRUD operations 
