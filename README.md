@@ -8,12 +8,12 @@ Through this example you will learn:
 
 ## Prerequisites
 
-This example is created with Mantil. To download [Mantil CLI](https://github.com/mantil-io/mantil#installation) on Mac or Linux use Homebrew 
+This example is created with Mantil. To download [Mantil CLI](https://docs.mantil.com/cli_install) on Mac or Linux use Homebrew 
 ```
 brew tap mantil-io/mantil
 brew install mantil
 ```
-or check [direct download links](https://github.com/mantil-io/mantil#installation).
+or check [direct download links](https://docs.mantil.com/cli_install#direct-download-linux-windows-and-mac).
 
 To deploy this application you will need an [AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/).
 
@@ -73,8 +73,8 @@ _, err := kv.Find(&items, mantil.FindBeginsWith, "completed:true")
 ```
 
 ## Deploying the application
+Note: If this is the first time you are using Mantil you will need to install Mantil Node on your AWS account. For detailed instructions please follow the [setup guide](https://docs.mantil.com/aws_detailed_setup/aws_credentials)
 
-Note: If this is the first time you are using Mantil you will need to install Mantil Node on your AWS account. For detailed instructions please follow the [one-step setup](https://github.com/mantil-io/mantil/blob/master/docs/getting_started.md#setup)
 ```
 mantil aws install
 ```
@@ -102,7 +102,7 @@ This will build the static assets and copy them over to the Mantil public folder
 
 After each change you have to deploy your changes with `mantil deploy`, or instruct Mantil to automatically deploy all saved changes with `mantil watch`.
 
-For more detailed instruction please refer to the [Mantil documentation](https://github.com/mantil-io/mantil#documentation).
+For more detailed instruction please refer to the [Mantil documentation](https://docs.mantil.com).
 
 ## Cleanup
 
@@ -113,6 +113,6 @@ mantil stage destroy development
 
 ## Final thoughts
 
-With this example you learned how to create a serverless todo application with AWS Lambda and Mantil's KV store backed by DynamoDB. Check out [our documentation](https://github.com/mantil-io/mantil#documentation) to find more interesting templates.
+With this example you learned how to create a serverless todo application with AWS Lambda and Mantil's KV store backed by DynamoDB. Check out [our documentation](https://docs.mantil.com/examples) to find more interesting templates.
 
 If you have any questions or comments on this template or would just like to share your view on Mantil contact us at [support@mantil.com](mailto:support@mantil.com).
